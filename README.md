@@ -1,5 +1,7 @@
 # MiniRepo
 
+[![Build Status](https://travis-ci.org/wojtekmach/mini_repo.svg?branch=master)](https://travis-ci.org/wojtekmach/mini_repo)
+
 MiniRepo allows self-hosting of Hex packages.
 
 Features:
