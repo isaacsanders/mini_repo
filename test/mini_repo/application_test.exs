@@ -4,6 +4,7 @@ defmodule MiniRepo.ApplicationTest do
   setup do
     File.rm_rf!("tmp")
     File.rm_rf!(Path.join(Application.app_dir(:mini_repo), "data"))
+    IO.puts "starting app"
     Application.ensure_all_started(:mini_repo)
     :ok
   end

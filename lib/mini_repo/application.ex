@@ -31,6 +31,8 @@ defmodule MiniRepo.Application do
     task_supervisor = {Task.Supervisor, name: MiniRepo.TaskSupervisor}
     children = [task_supervisor] ++ repository_specs(repos) ++ [endpoint_spec]
     opts = [strategy: :one_for_one, name: MiniRepo.Supervisor]
+    IO.puts "start supervisor"
+    IO.inspect http_options
     Supervisor.start_link(children, opts)
   end
 
